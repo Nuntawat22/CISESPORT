@@ -15,7 +15,6 @@ namespace CISESPORT
     public partial class FormAllPlayer : Form
     {
         List<Player> listPlayer = new List<Player>();
-        //List<> v = new List<>();
         Player selectedPlayer;
 
         private Stream playerFilePath;
@@ -72,7 +71,7 @@ namespace CISESPORT
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    if (!row.IsNewRow) //ตรวจสอบว่าไม่ใช่แถวใหม่
+                    if (!row.IsNewRow) 
                     {
 
                         string name = row.Cells[0].Value.ToString();
